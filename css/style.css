@@ -749,6 +749,7 @@ a {
   margin-top: 10px;
   text-align: center;
   font-family: Arial;
+  GitHub: #000 75;
 }
 #header .header-nav .social a {
   width: 37px;
@@ -879,13 +880,6 @@ a {
   -webkit-background-size: 103%;
   -moz-background-size: 103%;
   background-size: 103%;
-}
-#header .header-nav .social .GitHub {
-  background: url("//cdn.bootcss.com/logos/0.2.0/github-octocat.svg") no-repeat #fff;
-  -webkit-background-size: 90%;
-  -moz-background-size: 90%;
-  background-size: 90%;
-  background-position: 50% 100%;
 }
 #header .header-nav .social .CodePen {
   background: url("//cdn.bootcss.com/logos/0.2.0/codepen-icon.svg") no-repeat #000;
