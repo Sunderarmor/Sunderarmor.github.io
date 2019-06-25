@@ -57,4 +57,26 @@
     
   </entry>
   
+  <entry>
+    <title>本站博文基于以下框架模板</title>
+    <link href="http://yoursite.com/2019/06/20/%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6/"/>
+    <id>http://yoursite.com/2019/06/20/博文框架/</id>
+    <published>2019-06-20T04:00:00.000Z</published>
+    <updated>2019-06-25T04:11:23.614Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里是摘要<br>Abstract</p><a id="more"></a><p>这边是正文（上方为分割线）</p><h1 id="Head-部分"><a href="#Head-部分" class="headerlink" title="Head 部分"></a>Head 部分</h1><h2 id="‘’’"><a href="#‘’’" class="headerlink" title="‘’’"></a>‘’’</h2><p>title: 本站博文基于以下框架模板<br>date: 2019-06-20 00:00:00<br>categories: Intro<br>tags: blog 模板</p><!-- comments: false (如果不需要评论则加上)--><!-- reward: false (如果需要捐助则删掉)--><h2 id="reward-false"><a href="#reward-false" class="headerlink" title="reward: false"></a>reward: false</h2><p>这里是摘要<br>Abstract</p><!-- more --><p>‘’’</p><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><hr><p>本文作者： 坼甲<br>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里是摘要&lt;br&gt;Abstract&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Intro" scheme="http://yoursite.com/categories/Intro/"/>
+    
+    
+      <category term="blog 模板" scheme="http://yoursite.com/tags/blog-%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
 </feed>
