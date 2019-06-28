@@ -472,7 +472,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Sunderarmor 坼甲">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Sunderarmor 坼甲">
             
               <p class="site-author-name" itemprop="name">Sunderarmor 坼甲</p>
               <div class="site-description motion-element" itemprop="description">杂糅百家 以臻世事</div>
@@ -485,7 +485,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -807,7 +807,25 @@
     (d.head || d.body).appendChild(s);
   }
   
-    window.addEventListener('load', loadComments, false);
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
   
 </script>
 
@@ -1213,6 +1231,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>;
 <script>
-$("body").backstretch("https://i.pximg.net/img-original/img/2019/06/27/19/24/51/75432629_p0.jpg");
+$("body").backstretch("https://i.pximg.net/img-original/img/2018/10/27/00/04/03/71360830_p0.png");
 </script>
 </html>
