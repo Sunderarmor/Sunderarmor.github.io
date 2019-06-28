@@ -1864,7 +1864,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0934ff;
+  background: #cff;
 }
 .feed-link,
 .chat {
@@ -2931,7 +2931,8 @@ ul.breadcrumb li+li:last-child {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #d09e82;
+/* 通过这种方式设置透明度 */
+  background: rgba(120,15,60,0.6);
 }
 .site-subtitle {
   margin-top: 10px;
@@ -2977,35 +2978,22 @@ ul.breadcrumb li+li:last-child {
   background: #49b1f5;
 }
 .sidebar {
-  position: static;
-  float: left;
-  margin-left: -100%;
-  width: 240px;
-  background: #f5f7f9;
-  box-shadow: none;
-/* Firefox */
-  -moz-opacity: 0.9;
-/* others */
-  opacity: 0.9;
+/* 通过这种方式避免透明度继承 */
+  background: rgba(255,255,255,0);
+}
+.sidebar-inner {
+  background: rgba(255,255,255,0.7);
 }
 .header-inner {
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  padding: 0;
-  width: 240px;
-  background: #fff;
-  box-shadow: initial;
-  border-radius: initial;
-/* Firefox */
-  -moz-opacity: 0.9;
-/* others */
-  opacity: 0.9;
+  background: rgba(255,255,255,0.7);
+}
+.menu {
+  background: rgba(255,255,255,0);
+}
+.content-wrap {
+  background: rgba(255,255,255,0.9);
 }
 .footer {
   font-size: 14px;
   color: #999;
-}
-.site-author-image {
-  opacity: 1;
 }
