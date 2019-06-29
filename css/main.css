@@ -1864,7 +1864,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e0450a;
+  background: #9941f6;
 }
 .feed-link,
 .chat {
@@ -2974,8 +2974,9 @@ ul.breadcrumb li+li:last-child {
 .posts-expand .post-eof {
   margin: 80px auto 60px;
   width: 100%;
-  height: 3px;
-  background: rgba(65,105,225,0.3);
+  height: 1px;
+  background: rgba(0,0,0,0);
+  border-bottom: 3px dashed rgba(65,105,225,0.3);
 }
 .sidebar {
 /* 通过这种方式避免透明度继承 */
@@ -3012,4 +3013,31 @@ ul.breadcrumb li+li:last-child {
 }
 .back-to-top {
   background: #fc6423;
+}
+.posts-collapse .post {
+  color: #222;
+}
+.posts-collapse .post-title a,
+.posts-collapse .post-title span.exturl {
+  color: #555;
+}
+.posts-collapse .post-header {
+  border-bottom: 1px dashed #ffb18f;
+}
+.posts-collapse .post-header::before {
+  background: #ffb18f;
+}
+.page-archive .posts-collapse .archive-move-on {
+  background: #fc6423;
+}
+.posts-collapse .collection-title::before {
+  background: #ffb18f;
+}
+.posts-collapse .post:hover {
+  color: #fc6423;
+  transition-duration: 0.2s;
+}
+.posts-collapse .post-title-link:hover {
+  color: #fc6423;
+  transition-duration: 0.2s;
 }

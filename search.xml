@@ -14,9 +14,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo安装环境与常用命令]]></title>
-    <url>%2F2019%2F06%2F20%2FHexo%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[这里是摘要Abstract Git 环境准备Hexo 环境准备Hexo 常用命令Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 参考文献]]></content>
+    <title><![CDATA[博文框架]]></title>
+    <url>%2F2019%2F06%2F20%2F%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6%2F</url>
+    <content type="text"><![CDATA[这里是摘要Abstract 这边是正文（上方为分割线） Head 部分123456789101112---title: 本站博文基于以下框架模板date: 2019-06-20 00:00:00categories: Introtags: blog 模板&lt;!-- comments: false (如果不需要评论则加上)--&gt;&lt;!-- reward: false (如果需要捐助则删掉)--&gt;reward: false---这里是摘要Abstract&lt;!-- more --&gt; 标题2 本文作者： 坼甲版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -26,9 +26,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[博文框架]]></title>
-    <url>%2F2019%2F06%2F20%2F%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6%2F</url>
-    <content type="text"><![CDATA[这里是摘要Abstract 这边是正文（上方为分割线） Head 部分123456789101112---title: 本站博文基于以下框架模板date: 2019-06-20 00:00:00categories: Introtags: blog 模板&lt;!-- comments: false (如果不需要评论则加上)--&gt;&lt;!-- reward: false (如果需要捐助则删掉)--&gt;reward: false---这里是摘要Abstract&lt;!-- more --&gt; 标题2 本文作者： 坼甲版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
+    <title><![CDATA[Hexo安装环境与常用命令]]></title>
+    <url>%2F2019%2F06%2F20%2FHexo%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[这里是摘要Abstract Git 环境准备Hexo 环境准备Hexo 常用命令Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 参考文献]]></content>
       <categories>
         <category>学习</category>
       </categories>
