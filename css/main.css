@@ -1864,7 +1864,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9941f6;
+  background: #6696ff;
 }
 .feed-link,
 .chat {
@@ -2999,7 +2999,7 @@ ul.breadcrumb li+li:last-child {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,233,0.55);
 }
 .footer {
   font-size: 14px;
@@ -3040,4 +3040,10 @@ ul.breadcrumb li+li:last-child {
 .posts-collapse .post-title-link:hover {
   color: #fc6423;
   transition-duration: 0.2s;
+}
+.backstretch {
+  opacity: 0.75;
+}
+body {
+  background-color: #74809a;
 }
