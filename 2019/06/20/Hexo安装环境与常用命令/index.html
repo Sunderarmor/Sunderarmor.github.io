@@ -97,6 +97,7 @@
 
 
 <script>
+function category_js () {
   $("<div class='display' style='float: left'> &nbsp>&nbsp </div>").prependTo(".category-list-item");
   $(".category-list-child").css("display","none");
   // .posts-expand .post-body ul li
@@ -114,21 +115,23 @@
   // $(this).siblings(".category-list-child").css("display","block"):$(this).siblings(".category-list-child").css("display","none");
   $(this).siblings(".category-list-child").slideToggle();
   // $(this).siblings(".category-list-child").fadeToggle();
+  })
+}
 </script>
-  
 
-  <meta name="description" content="这里是摘要Abstract">
-<meta name="keywords" content="blog,模板">
+
+  <meta name="description" content="本博客当前部署在 我的个人主页 上。感谢b站 程序羊 提供的详细指导：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo本博客的基础搭建就是基于此视频的步骤完成的。但是在此之前仍然有一些准工作要做。">
+<meta name="keywords" content="blog,hexo,git,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo安装环境与常用命令">
 <meta property="og:url" content="http://yoursite.com/2019/06/20/Hexo安装环境与常用命令/index.html">
 <meta property="og:site_name" content="圜则凹晶馆">
-<meta property="og:description" content="这里是摘要Abstract">
+<meta property="og:description" content="本博客当前部署在 我的个人主页 上。感谢b站 程序羊 提供的详细指导：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo本博客的基础搭建就是基于此视频的步骤完成的。但是在此之前仍然有一些准工作要做。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-06-28T05:50:08.799Z">
+<meta property="og:updated_time" content="2019-07-03T05:43:06.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo安装环境与常用命令">
-<meta name="twitter:description" content="这里是摘要Abstract">
+<meta name="twitter:description" content="本博客当前部署在 我的个人主页 上。感谢b站 程序羊 提供的详细指导：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo本博客的基础搭建就是基于此视频的步骤完成的。但是在此之前仍然有一些准工作要做。">
 
 
 
@@ -474,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-06-28 01:50:08" itemprop="dateModified" datetime="2019-06-28T01:50:08-04:00">2019-06-28</time>
+                <time title="Modified: 2019-07-03 01:43:06" itemprop="dateModified" datetime="2019-07-03T01:43:06-04:00">2019-07-03</time>
               
             
           </span>
@@ -492,6 +495,20 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/hexo/环境部署/" itemprop="url" rel="index"><span itemprop="name">环境部署</span></a></span>
 
                 
                 
@@ -539,8 +556,21 @@
       
 
       
-        <p>这里是摘要<br>Abstract<br><a id="more"></a></p>
-<h1 id="Git-环境准备"><a href="#Git-环境准备" class="headerlink" title="Git 环境准备"></a>Git 环境准备</h1><h1 id="Hexo-环境准备"><a href="#Hexo-环境准备" class="headerlink" title="Hexo 环境准备"></a>Hexo 环境准备</h1><h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>本博客当前部署在 <a href="https://sunderarmor.ink/" target="_blank" rel="noopener">我的个人主页</a> 上。<br>感谢b站 <a href="https://space.bilibili.com/384068749" target="_blank" rel="noopener">程序羊</a> 提供的详细指导：<br><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br>本博客的基础搭建就是基于此视频的步骤完成的。<br>但是在此之前仍然有一些准工作要做。</p>
+<a id="more"></a>
+<!-- 关于抬头格式 -->
+<!-- comments: false (如果不需要评论则加上) -->
+<!-- reward: false (如果需要捐助则删掉) -->
+<!-- mathjax: true (实际上用的是Latex格式) -->
+<!-- 以下为正文 -->
+<p>因为网络上有丰富的相关步骤教程，这里仅仅指出关键步骤，详细内容暂时不进行记录。</p>
+<h1 id="Git-环境准备"><a href="#Git-环境准备" class="headerlink" title="Git 环境准备"></a>Git 环境准备</h1><p>虽然有个人域名，但本质上此博客还是部署在GitHub上的，因此在安装Hexo之前，首先要解决在Git环境的安装。</p>
+<h1 id="Hexo-环境准备"><a href="#Hexo-环境准备" class="headerlink" title="Hexo 环境准备"></a>Hexo 环境准备</h1><p>安装完成Git环境后，就可以按照 <a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a> 里的步骤进行hexo环境和主题的安装了。</p>
+<h1 id="寻找合适的主题并个性化"><a href="#寻找合适的主题并个性化" class="headerlink" title="寻找合适的主题并个性化"></a>寻找合适的主题并个性化</h1><p>本博客采用的Next主题，个性化部分会在后面的文章中做介绍。</p>
+<h1 id="注册域名并完成推送"><a href="#注册域名并完成推送" class="headerlink" title="注册域名并完成推送"></a>注册域名并完成推送</h1><p>最后的步骤也很关键，值得注意的是一般情况下Hexo最常见的推送命令如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
+<p>如果想现在本地看看效果则可以使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>本地效果满意则可以完成最后的部署命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -549,7 +579,25 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ol>
+<li><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></li>
+</ol>
+<hr>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>本文作者： 坼甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td>
+</tr>
+</tbody>
+</table>
+</div>
+
       
     </div>
 
@@ -567,7 +615,7 @@
     
       <div>
         <div id="reward-container">
-  <div>您的支持是我继续前进的动力！</div>
+  <div></div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
@@ -634,7 +682,11 @@
           
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
           
-            <a href="/tags/模板/" rel="tag"><i class="fa fa-tag"></i> 模板</a>
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+          
+            <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
           
         </div>
       
@@ -668,18 +720,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/博文框架/" rel="next" title="博文框架">
-                <i class="fa fa-chevron-left"></i> 博文框架
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/23/Hexo主题的个性化设置/" rel="prev" title="Hexo主题的个性化设置">
-                Hexo主题的个性化设置 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/20/建站日志/" rel="prev" title="建站日志">
+                建站日志 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -781,7 +829,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -802,7 +858,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -843,7 +905,7 @@
                   
                     
                   
-                  <a href="/sunderarmor3.14@gmail.com" title="E-Mail &rarr; sunderarmor3.14@gmail.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="https://sunderarmor3.14@gmail.com" title="E-Mail &rarr; https://sunderarmor3.14@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -922,7 +984,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-环境准备"><span class="nav-number">1.</span> <span class="nav-text">Git 环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-环境准备"><span class="nav-number">2.</span> <span class="nav-text">Hexo 环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-常用命令"><span class="nav-number">3.</span> <span class="nav-text">Hexo 常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">3.1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">3.1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">3.1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">3.1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">3.1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">4.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-环境准备"><span class="nav-number">1.</span> <span class="nav-text">Git 环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-环境准备"><span class="nav-number">2.</span> <span class="nav-text">Hexo 环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#寻找合适的主题并个性化"><span class="nav-number">3.</span> <span class="nav-text">寻找合适的主题并个性化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注册域名并完成推送"><span class="nav-number">4.</span> <span class="nav-text">注册域名并完成推送</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-常用命令"><span class="nav-number">5.</span> <span class="nav-text">Hexo 常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">5.1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">5.1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">5.1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">5.1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">5.1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
@@ -945,7 +1007,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-star"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Sunderarmor 坼甲</span>
 
@@ -1021,12 +1083,6 @@
 
 
 
-
-  
-    
-    
-  
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -1479,6 +1535,46 @@
   
 
   
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
 
 
   
@@ -1540,6 +1636,47 @@
   
 
   
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      const selection = document.getSelection();
+      const selected = selection.rangeCount > 0 ? selection.getRangeAt(0) : false;
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('Copied');
+        else $(this).text('Copy failed');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+      if (selected) {
+        selection.removeAllRanges();
+        selection.addRange(selected);
+      }
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('Copy');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
 
   
 

@@ -97,6 +97,7 @@
 
 
 <script>
+function category_js () {
   $("<div class='display' style='float: left'> &nbsp>&nbsp </div>").prependTo(".category-list-item");
   $(".category-list-child").css("display","none");
   // .posts-expand .post-body ul li
@@ -114,20 +115,22 @@
   // $(this).siblings(".category-list-child").css("display","block"):$(this).siblings(".category-list-child").css("display","none");
   $(this).siblings(".category-list-child").slideToggle();
   // $(this).siblings(".category-list-child").fadeToggle();
+  })
+}
 </script>
-  
+
 
   <meta name="description" content="这里是摘要Abstract">
-<meta name="keywords" content="blog">
+<meta name="keywords" content="blog,模板">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo主题的个性化设置">
+<meta property="og:title" content="Hexo-Next主题的个性化设置">
 <meta property="og:url" content="http://yoursite.com/2019/06/23/Hexo主题的个性化设置/index.html">
 <meta property="og:site_name" content="圜则凹晶馆">
 <meta property="og:description" content="这里是摘要Abstract">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-06-28T05:49:11.559Z">
+<meta property="og:updated_time" content="2019-07-03T06:04:04.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo主题的个性化设置">
+<meta name="twitter:title" content="Hexo-Next主题的个性化设置">
 <meta name="twitter:description" content="这里是摘要Abstract">
 
 
@@ -148,7 +151,7 @@
   };
 </script>
 
-  <title>Hexo主题的个性化设置 | 圜则凹晶馆</title>
+  <title>Hexo-Next主题的个性化设置 | 圜则凹晶馆</title>
   
 
 
@@ -431,7 +434,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo主题的个性化设置
+          <h1 class="post-title" itemprop="name headline">Hexo-Next主题的个性化设置
 
               
             
@@ -474,11 +477,43 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-06-28 01:49:11" itemprop="dateModified" datetime="2019-06-28T01:49:11-04:00">2019-06-28</time>
+                <time title="Modified: 2019-07-03 02:04:04" itemprop="dateModified" datetime="2019-07-03T02:04:04-04:00">2019-07-03</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/一级分类/" itemprop="url" rel="index"><span itemprop="name">一级分类</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/一级分类/二级分类-（非必须）/" itemprop="url" rel="index"><span itemprop="name">二级分类 （非必须）</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/一级分类/二级分类-（非必须）/三级分类-（非必须）/" itemprop="url" rel="index"><span itemprop="name">三级分类 （非必须）</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -521,8 +556,29 @@
       
 
       
-        <p>这里是摘要<br>Abstract<br><a id="more"></a><br>这边是正文（上方为分割线）</p>
-<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><p>sunderarmor3.14@gmail.com</p>
+        <p>这里是摘要<br>Abstract</p>
+<a id="more"></a>
+<!-- 关于抬头格式 -->
+<!-- comments: false (如果不需要评论则加上) -->
+<!-- reward: false (如果需要捐助则删掉) -->
+<!-- mathjax: true (实际上用的是Latex格式) -->
+<!-- 以下为正文 -->
+<!-- 结尾参考文献及中文版权声明 -->
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><hr>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>本文作者： 坼甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td>
+</tr>
+</tbody>
+</table>
+</div>
 
       
     </div>
@@ -541,7 +597,7 @@
     
       <div>
         <div id="reward-container">
-  <div>您的支持是我继续前进的动力！</div>
+  <div></div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
@@ -590,7 +646,7 @@
   <li class="post-copyright-link">
     <strong>Post link: </strong>
     
-    <a href="http://yoursite.com/2019/06/23/Hexo主题的个性化设置/" title="Hexo主题的个性化设置">http://yoursite.com/2019/06/23/Hexo主题的个性化设置/</a>
+    <a href="http://yoursite.com/2019/06/23/Hexo主题的个性化设置/" title="Hexo-Next主题的个性化设置">http://yoursite.com/2019/06/23/Hexo主题的个性化设置/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.</li>
@@ -607,6 +663,8 @@
         <div class="post-tags">
           
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+            <a href="/tags/模板/" rel="tag"><i class="fa fa-tag"></i> 模板</a>
           
         </div>
       
@@ -640,8 +698,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/Hexo安装环境与常用命令/" rel="next" title="Hexo安装环境与常用命令">
-                <i class="fa fa-chevron-left"></i> Hexo安装环境与常用命令
+              <a href="/2019/06/21/博文框架/" rel="next" title="博文框架">
+                <i class="fa fa-chevron-left"></i> 博文框架
               </a>
             
           </div>
@@ -649,10 +707,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/28/Hexo-Next主题的个性化设置/" rel="prev" title="Hexo-Next主题的个性化设置">
-                Hexo-Next主题的个性化设置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -753,7 +807,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -774,7 +836,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -815,7 +883,7 @@
                   
                     
                   
-                  <a href="/sunderarmor3.14@gmail.com" title="E-Mail &rarr; sunderarmor3.14@gmail.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="https://sunderarmor3.14@gmail.com" title="E-Mail &rarr; https://sunderarmor3.14@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -894,7 +962,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标题1"><span class="nav-number">1.</span> <span class="nav-text">标题1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题2"><span class="nav-number">1.1.</span> <span class="nav-text">标题2</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">1.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
@@ -917,7 +985,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-star"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Sunderarmor 坼甲</span>
 
@@ -993,12 +1061,6 @@
 
 
 
-
-  
-    
-    
-  
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -1077,7 +1139,7 @@
   var disqus_config = function() {
     this.page.url = "http://yoursite.com/2019/06/23/Hexo主题的个性化设置/";
     this.page.identifier = "2019/06/23/Hexo主题的个性化设置/";
-    this.page.title = 'Hexo主题的个性化设置';
+    this.page.title = 'Hexo-Next主题的个性化设置';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1451,6 +1513,46 @@
   
 
   
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
 
 
   
@@ -1512,6 +1614,47 @@
   
 
   
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      const selection = document.getSelection();
+      const selected = selection.rangeCount > 0 ? selection.getRangeAt(0) : false;
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('Copied');
+        else $(this).text('Copy failed');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+      if (selected) {
+        selection.removeAllRanges();
+        selection.addRange(selected);
+      }
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('Copy');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
 
   
 
