@@ -1,137 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Hexo-Next主题的个性化设置</title>
-      <link href="/2019/06/23/Hexo%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/"/>
-      <url>/2019/06/23/Hexo%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>这里是摘要<br>Abstract</p><a id="more"></a><!-- 关于抬头格式 --><!-- comments: false (如果不需要评论则加上) --><!-- reward: false (如果需要捐助则删掉) --><!-- mathjax: true (实际上用的是Latex格式) --><!-- 以下为正文 --><!-- 结尾参考文献及中文版权声明 --><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><hr><div class="table-container"><table><thead><tr><th>本文作者： 坼甲</th></tr></thead><tbody><tr><td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td></tr></tbody></table></div>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[Hexo-Next主题的个性化设置]]></title>
+    <url>%2F2019%2F06%2F23%2FHexo%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[这里是摘要Abstract 参考文献 本文作者： 坼甲 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
       <categories>
-          
-          <category> 一级分类 </category>
-          
-          <category> 二级分类 （非必须） </category>
-          
-          <category> 三级分类 （非必须） </category>
-          
+        <category>一级分类</category>
+        <category>二级分类 （非必须）</category>
+        <category>三级分类 （非必须）</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> blog </tag>
-            
-            <tag> 模板 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博文框架</title>
-      <link href="/2019/06/21/%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6/"/>
-      <url>/2019/06/21/%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6/</url>
-      
-        <content type="html"><![CDATA[<p>作为第一篇文章，此文用作本博客markdown (.md)格式写作参考</p><a id="more"></a><!-- 关于抬头格式 --><!-- comments: false (如果不需要评论则加上) --><!-- reward: false (如果需要捐助则删掉) --><!-- mathjax: true (实际上用的是Latex格式) --><!-- 以下为正文 --><h1 id="Head-部分"><a href="#Head-部分" class="headerlink" title="Head 部分"></a>Head 部分</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博文框架</span><br><span class="line">date: 2019-06-20 00:00:00</span><br><span class="line">categories: </span><br><span class="line">  - 学习</span><br><span class="line">  - hexo</span><br><span class="line">  - markdown</span><br><span class="line">tags: [blog,模板]</span><br><span class="line">reward: false</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">作为第一篇文章，此文用作本博客markdown (.md)格式写作参考</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- more --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 关于抬头格式 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- comments: false (如果不需要评论则加上) --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- reward: false (如果需要捐助则删掉) --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 以下为正文 --&gt;</span></span><br></pre></td></tr></table></figure><h1 id="如何新建一篇-post"><a href="#如何新建一篇-post" class="headerlink" title="如何新建一篇 post"></a>如何新建一篇 post</h1><p>命令：<br><figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:<span class="symbol">\U</span>sers<span class="symbol">\.</span>..<span class="symbol">\b</span>log&gt; hexo n post &lt;新的博客名称&gt;</span><br></pre></td></tr></table></figure></p><p>新的博客自动采用上文中的模板，代码如下（在终端没有hexo工具包的情况下可以先复制这里的模板使用，等之后有机会再推送）：<br><figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">---</span></span><br><span class="line"><span class="xml">title: </span><span class="template-variable">&#123;&#123; title &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">date: </span><span class="template-variable">&#123;&#123; <span class="name">date</span> &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">categories: </span></span><br><span class="line"><span class="xml">  - 一级分类</span></span><br><span class="line"><span class="xml">  - 二级分类 （非必须）</span></span><br><span class="line"><span class="xml">  - 三级分类 （非必须）</span></span><br><span class="line"><span class="xml">tags: [blog,模板]</span></span><br><span class="line"><span class="xml">reward: false</span></span><br><span class="line"><span class="xml">mathjax: true</span></span><br><span class="line"><span class="xml">---</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">这里是摘要</span></span><br><span class="line"><span class="xml">Abstract</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- 关于抬头格式 --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- comments: false (如果不需要评论则加上) --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- reward: false (如果需要捐助则删掉) --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;</span></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- 以下为正文 --&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="comment">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span></span></span><br><span class="line"><span class="xml"># 参考文献</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">-----------------</span></span><br><span class="line"><span class="xml">|本文作者： 坼甲|</span></span><br><span class="line"><span class="xml">| ------------- |</span></span><br><span class="line"><span class="xml">|版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。转载请注明出处！|</span></span><br></pre></td></tr></table></figure></p><p>默认情况下：</p><ol><li>开启评论</li><li>不开启打赏</li><li>使用基于Latex公式输入法</li></ol><h1 id="正文部分"><a href="#正文部分" class="headerlink" title="正文部分"></a>正文部分</h1><p>正文部分的markdown的详细写作说明请参考后续文章。</p><h1 id="公式举例"><a href="#公式举例" class="headerlink" title="公式举例"></a>公式举例</h1><p>本博客采用的公式代码基于Latex，举例如下：</p><script type="math/tex; mode=display">P = \frac{\sum_{i=1}^n (x_i- x)(y_i- y)}{\displaystyle \left[\sum_{i=1}^n (x_i-x)^2\sum_{i=1}^n (y_i-y)^2\right]^{1/2} }</script><p>其代码为：<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">P = <span class="string">\frac</span></span><br><span class="line">&#123;<span class="string">\sum_&#123;i=1&#125;^n</span> (x_i- x)(y_i- y)&#125;</span><br><span class="line">&#123;<span class="string">\displaystyle</span> <span class="string">\left[</span></span><br><span class="line"><span class="string">\sum_&#123;i=1&#125;^n</span> (x_i-x)^<span class="number">2</span></span><br><span class="line"><span class="string">\sum_&#123;i=1&#125;^n</span> (y_i-y)^<span class="number">2</span></span><br><span class="line"><span class="string">\right]^&#123;1/2&#125;</span> &#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></p><h1 id="结尾部分"><a href="#结尾部分" class="headerlink" title="结尾部分"></a>结尾部分</h1><p>默认代码如下，需要根据情况添加内容：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span></span></span><br><span class="line"><span class="section"># 参考文献</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-----------------</span><br><span class="line">|本文作者： 坼甲|</span><br><span class="line">| ------------- |</span><br><span class="line">|版权声明： 本博客所有文章除特别声明外，均采用 [<span class="string">CC BY-NC-SA 4.0</span>](<span class="link">https://creativecommons.org/licenses/by-nc-sa/4.0/</span>) 许可协议。转载请注明出处！|</span><br></pre></td></tr></table></figure></p><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><hr><div class="table-container"><table><thead><tr><th>本文作者： 坼甲</th></tr></thead><tbody><tr><td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td></tr></tbody></table></div>]]></content>
-      
-      
+      <tags>
+        <tag>blog</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博文框架]]></title>
+    <url>%2F2019%2F06%2F21%2F%E5%8D%9A%E6%96%87%E6%A1%86%E6%9E%B6%2F</url>
+    <content type="text"><![CDATA[作为第一篇文章，此文用作本博客markdown (.md)格式写作参考 Head 部分1234567891011121314151617181920---title: 博文框架date: 2019-06-20 00:00:00categories: - 学习 - hexo - markdowntags: [blog,模板]reward: falsemathjax: true---作为第一篇文章，此文用作本博客markdown (.md)格式写作参考&lt;!-- more --&gt;&lt;!-- 关于抬头格式 --&gt;&lt;!-- comments: false (如果不需要评论则加上) --&gt;&lt;!-- reward: false (如果需要捐助则删掉) --&gt;&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;&lt;!-- 以下为正文 --&gt; 如何新建一篇 post命令：1C:\Users\...\blog&gt; hexo n post &lt;新的博客名称&gt; 新的博客自动采用上文中的模板，代码如下（在终端没有hexo工具包的情况下可以先复制这里的模板使用，等之后有机会再推送）：12345678910111213141516171819202122232425262728293031---title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;categories: - 一级分类 - 二级分类 （非必须） - 三级分类 （非必须）tags: [blog,模板]reward: falsemathjax: true---这里是摘要Abstract&lt;!-- more --&gt;&lt;!-- 关于抬头格式 --&gt;&lt;!-- comments: false (如果不需要评论则加上) --&gt;&lt;!-- reward: false (如果需要捐助则删掉) --&gt;&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;&lt;!-- 以下为正文 --&gt;&lt;!-- 结尾参考文献及中文版权声明 --&gt;## 参考文献-----------------|本文作者： 坼甲|| ------------- ||版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。转载请注明出处！| 默认情况下： 开启评论 不开启打赏 使用基于Latex公式输入法 正文部分正文部分的markdown的详细写作说明请参考后续文章。 图片测试 伊芙利特，源作者NoriZC 代码如下：123![](/images/avatar.png)&gt; 伊芙利特，源作者[NoriZC](https://twitter.com/norizci?lang=en) 公式举例本博客采用的公式代码基于Latex，举例如下： P = \frac {\sum_{i=1}^n (x_i- x)(y_i- y)} {\displaystyle \left[ \sum_{i=1}^n (x_i-x)^2 \sum_{i=1}^n (y_i-y)^2 \right]^{1/2} }其代码为：12345678$$P = \frac&#123;\sum_&#123;i=1&#125;^n (x_i- x)(y_i- y)&#125;&#123;\displaystyle \left[\sum_&#123;i=1&#125;^n (x_i-x)^2\sum_&#123;i=1&#125;^n (y_i-y)^2\right]^&#123;1/2&#125; &#125;$$ 结尾部分默认代码如下，需要根据情况添加内容：12345678&lt;!-- 结尾参考文献及中文版权声明 --&gt;## 参考文献-----------------|本文作者： 坼甲|| ------------- ||版权声明： 本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。转载请注明出处！| 参考文献 本文作者： 坼甲 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> hexo </category>
-          
-          <category> markdown </category>
-          
+        <category>学习</category>
+        <category>hexo</category>
+        <category>markdown</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> blog </tag>
-            
-            <tag> 模板 </tag>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>建站日志</title>
-      <link href="/2019/06/20/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
-      <url>/2019/06/20/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/</url>
-      
-        <content type="html"><![CDATA[<p>这里是摘要<br>Abstract</p><a id="more"></a><!-- 关于抬头格式 --><!-- comments: false (如果不需要评论则加上) --><!-- reward: false (如果需要捐助则删掉) --><!-- mathjax: true (实际上用的是Latex格式) --><!-- 以下为正文 --><!-- 结尾参考文献及中文版权声明 --><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><hr><div class="table-container"><table><thead><tr><th>本文作者： 坼甲</th></tr></thead><tbody><tr><td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td></tr></tbody></table></div>]]></content>
-      
-      
+      <tags>
+        <tag>blog</tag>
+        <tag>模板</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[建站日志]]></title>
+    <url>%2F2019%2F06%2F20%2F%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"><![CDATA[这里是摘要Abstract 参考文献 本文作者： 坼甲 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
       <categories>
-          
-          <category> 一级分类 </category>
-          
-          <category> 二级分类 （非必须） </category>
-          
-          <category> 三级分类 （非必须） </category>
-          
+        <category>一级分类</category>
+        <category>二级分类 （非必须）</category>
+        <category>三级分类 （非必须）</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> blog </tag>
-            
-            <tag> 模板 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo安装环境与常用命令</title>
-      <link href="/2019/06/20/Hexo%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-      <url>/2019/06/20/Hexo%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-      
-        <content type="html"><![CDATA[<p>本博客当前部署在 <a href="https://sunderarmor.ink/" target="_blank" rel="noopener">我的个人主页</a> 上。<br>感谢b站 <a href="https://space.bilibili.com/384068749" target="_blank" rel="noopener">程序羊</a> 提供的详细指导：<br><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br>本博客的基础搭建就是基于此视频的步骤完成的。<br>但是在此之前仍然有一些准工作要做。</p><a id="more"></a><!-- 关于抬头格式 --><!-- comments: false (如果不需要评论则加上) --><!-- reward: false (如果需要捐助则删掉) --><!-- mathjax: true (实际上用的是Latex格式) --><!-- 以下为正文 --><p>因为网络上有丰富的相关步骤教程，这里仅仅指出关键步骤，详细内容暂时不进行记录。</p><h1 id="Git-环境准备"><a href="#Git-环境准备" class="headerlink" title="Git 环境准备"></a>Git 环境准备</h1><p>虽然有个人域名，但本质上此博客还是部署在GitHub上的，因此在安装Hexo之前，首先要解决在Git环境的安装。</p><h1 id="Hexo-环境准备"><a href="#Hexo-环境准备" class="headerlink" title="Hexo 环境准备"></a>Hexo 环境准备</h1><p>安装完成Git环境后，就可以按照 <a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a> 里的步骤进行hexo环境和主题的安装了。</p><h1 id="寻找合适的主题并个性化"><a href="#寻找合适的主题并个性化" class="headerlink" title="寻找合适的主题并个性化"></a>寻找合适的主题并个性化</h1><p>本博客采用的Next主题，个性化部分会在后面的文章中做介绍。</p><h1 id="注册域名并完成推送"><a href="#注册域名并完成推送" class="headerlink" title="注册域名并完成推送"></a>注册域名并完成推送</h1><p>最后的步骤也很关键，值得注意的是一般情况下Hexo最常见的推送命令如下：<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure></p><p>如果想现在本地看看效果则可以使用：<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure></p><p>本地效果满意则可以完成最后的部署命令：<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure></p><h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ol><li><a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></li></ol><hr><div class="table-container"><table><thead><tr><th>本文作者： 坼甲</th></tr></thead><tbody><tr><td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td></tr></tbody></table></div>]]></content>
-      
-      
+      <tags>
+        <tag>blog</tag>
+        <tag>模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo安装环境与常用命令]]></title>
+    <url>%2F2019%2F06%2F20%2FHexo%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[本博客当前部署在 我的个人主页 上。感谢b站 程序羊 提供的详细指导：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo本博客的基础搭建就是基于此视频的步骤完成的。但是在此之前仍然有一些准工作要做。 因为网络上有丰富的相关步骤教程，这里仅仅指出关键步骤，详细内容暂时不进行记录。 Git 环境准备虽然有个人域名，但本质上此博客还是部署在GitHub上的，因此在安装Hexo之前，首先要解决在Git环境的安装。 Hexo 环境准备安装完成Git环境后，就可以按照 手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo 里的步骤进行hexo环境和主题的安装了。 寻找合适的主题并个性化本博客采用的Next主题，个性化部分会在后面的文章中做介绍。 注册域名并完成推送最后的步骤也很关键，值得注意的是一般情况下Hexo最常见的推送命令如下：12hexo cleanhexo g 如果想现在本地看看效果则可以使用：1hexo s 本地效果满意则可以完成最后的部署命令：1hexo d Hexo 常用命令Welcome to Hexo! Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 参考文献 手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo 本文作者： 坼甲 版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明出处！]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> hexo </category>
-          
-          <category> 环境部署 </category>
-          
+        <category>学习</category>
+        <category>hexo</category>
+        <category>环境部署</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> blog </tag>
-            
-            <tag> hexo </tag>
-            
-            <tag> git </tag>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>blog</tag>
+        <tag>hexo</tag>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
 </search>
