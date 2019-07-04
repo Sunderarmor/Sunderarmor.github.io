@@ -128,10 +128,12 @@ function category_js () {
 <meta property="og:site_name" content="圜则凹晶馆">
 <meta property="og:description" content="转载自：Hexo写作系列(1) - NexT主题自带的样式 本系列主要介绍和hexo-NexT主题相关的一些写作技巧，可能会涉及到部分前端知识(不了解也没关系，能用就行)。我之所以选择hexo-NexT来搭建个人网站，一个很重要的原因就是因为简单、方便、快捷！不需要服务器，直接通过Markdown来进行写作，不仅文章布局美观，还可以节省大量的时间。 这样做的一个好处是能够避免在文章中手动加入各种h">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-04T03:47:13.897Z">
+<meta property="og:image" content="http://yoursite.com/images/background_2.jpg">
+<meta property="og:updated_time" content="2019-07-04T06:05:08.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Next主题自带的样式">
 <meta name="twitter:description" content="转载自：Hexo写作系列(1) - NexT主题自带的样式 本系列主要介绍和hexo-NexT主题相关的一些写作技巧，可能会涉及到部分前端知识(不了解也没关系，能用就行)。我之所以选择hexo-NexT来搭建个人网站，一个很重要的原因就是因为简单、方便、快捷！不需要服务器，直接通过Markdown来进行写作，不仅文章布局美观，还可以节省大量的时间。 这样做的一个好处是能够避免在文章中手动加入各种h">
+<meta name="twitter:image" content="http://yoursite.com/images/background_2.jpg">
 
 
 
@@ -546,12 +548,72 @@ function category_js () {
 <div class="note info">
             <p>本系列针对的是NexT 5.1.4版本的样式。</p>
           </div>
+
 <a id="more"></a>
 <!-- 关于抬头格式 -->
 <!-- comments: false (如果不需要评论则加上) -->
 <!-- reward: false (如果需要捐助则删掉) -->
 <!-- mathjax: true (实际上用的是Latex格式) -->
 <!-- 以下为正文 -->
+
+## 文本居中引用
+该样式可以将一段文本居中显示，并在首尾各自生成一个引号图片，效果如下：
+<blockquote class="blockquote-center"><p>人类的本质是复读机。</p>
+<p>——<strong>复读机</strong></p>
+</blockquote>
+源码如下：
+
+undefined
+
+这里的cq是标签别名，也可以用完整的标签名：
+
+undefined
+
+## 图片突破容器宽度限制
+
+**<font color="red">经验证此效果在当前的Next版本（7.1.2）无效。</font>**
+使用此标签引用图片时，图片将自动扩大 26%，并突破文章容器的宽度。 此标签使用于需要突出显示的图片, 图片的扩大与容器的偏差从视觉上提升图片的吸引力。
+效果如下：
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/background_2.jpg" class="full-image" alt="alt" title="by NoriZC"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+源码如下：
+undefined
+
+这里的alt和title可以不写，alt属性是找不到图片时显示的文本，title是鼠标停留在图片上时显示的文本。
+
+## Note标签（重要）
+本标签出自于Bootstrap，使用前需要先启用主题配置文件：
+
+undefined
+
+效果如下：
+<div class="note default">
+            <p>default</p>
+          </div>
+<div class="note primary">
+            <p>primary</p>
+          </div>
+<div class="note success">
+            <p>success</p>
+          </div>
+<div class="note info">
+            <p>info</p>
+          </div>
+<div class="note warning">
+            <p>warning</p>
+          </div>
+<div class="note danger">
+            <p>danger</p>
+          </div>
+<p>Note标签一共有以上六种类型：<code>default,primary,success,info,warning,danger</code>，源码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Tab标签（重要）"><a href="#Tab标签（重要）" class="headerlink" title="Tab标签（重要）"></a>Tab标签（重要）</h2><p>这个标签和浏览器的tab是类似的，使用前也需要启用配置：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Tabs tag.</span></span><br><span class="line"><span class="attr">tabs:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  transition:</span></span><br><span class="line"><span class="attr">    tabs:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    labels:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  border_radius:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<p>效果如下：<br><div class="tabs" id="贴吧"><ul class="nav-tabs"><li class="tab active"><a href="#贴吧-1">android开发吧</a></li><li class="tab"><a href="#贴吧-2">java吧</a></li><li class="tab"><a href="#贴吧-3">c++吧</a></li><li class="tab"><a href="#贴吧-4">c语言</a></li><li class="tab"><a href="#贴吧-5">神奇海螺</a></li></ul><div class="tab-content"><div class="tab-pane active" id="贴吧-1"><p>有问题为什么不先问问隔壁Java吧呢？</p></div><div class="tab-pane" id="贴吧-2"><p>有问题为什么不先问问隔壁C++吧呢？</p></div><div class="tab-pane" id="贴吧-3"><p>有问题为什么不先问问隔壁C语言吧呢？</p></div><div class="tab-pane" id="贴吧-4"><p>有问题为什么不先问问神奇海螺吧呢？</p></div><div class="tab-pane" id="贴吧-5"><p>有问必答不知道</p></div></div></div><br>源码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 贴吧, 1 %&#125;</span><br><span class="line">&lt;!-- tab android开发吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁Java吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab java吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C++吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c++吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C语言吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c语言 --&gt;</span><br><span class="line">有问题为什么不先问问神奇海螺吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 神奇海螺 --&gt;</span><br><span class="line">有问必答不知道</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>简单介绍下常规用法：</p>
+<ol>
+<li>源码第一行的数字表示默认显示哪一个tab页面，如果是-1则表示隐藏所有tab页面内容。</li>
+<li>如果不为每个tab单独制定名字，则会以第一行源码的名字为每个tab命名，并自动在名字后加上1,2,3…以示区分。</li>
+<li>tab的名字支持fontawesome图标，使用方法是@加上图标的名字，例如<code>@home</code>，注意该图标需要添加在tab名字的最后，渲染时图标会自动放在名字最前面，比如：<code>&lt;!-- tab android开发吧@home --&gt;</code>。</li>
+</ol>
+<p>更多内容参见：<br><a href="https://almostover.ru/2016-01/hexo-theme-next-test/#Tab-tag-test" target="_blank" rel="noopener">Tab tag test</a></p>
 <!-- 结尾参考文献及中文版权声明 -->
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://lewky.cn/posts/38eb04fa.html" target="_blank" rel="noopener">Hexo写作系列(1) - NexT主题自带的样式</a></p>
 <hr>
@@ -939,7 +1001,7 @@ function category_js () {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab标签（重要）"><span class="nav-number">1.</span> <span class="nav-text">Tab标签（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">2.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
