@@ -120,21 +120,19 @@ function category_js () {
 </script>
 
 
-  <meta name="description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考">
+  <meta name="description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考。会加入一些常见的写作格式方便查阅，如果需要更多的功能实现建议参阅：Markdown格式的基础语法Hexo-Next主题自带的样式LaTex 常用的公式语法">
 <meta name="keywords" content="hexo,blog,模板">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博文框架">
 <meta property="og:url" content="http://yoursite.com/2019/06/21/博文框架/index.html">
 <meta property="og:site_name" content="圜则凹晶馆">
-<meta property="og:description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考">
+<meta property="og:description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考。会加入一些常见的写作格式方便查阅，如果需要更多的功能实现建议参阅：Markdown格式的基础语法Hexo-Next主题自带的样式LaTex 常用的公式语法">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/avatar.png">
-<meta property="og:image" content="http://yoursite.com/images/avatar.png">
-<meta property="og:image" content="http://yoursite.com/images/avatar.png">
-<meta property="og:updated_time" content="2019-07-03T19:35:41.204Z">
+<meta property="og:updated_time" content="2019-07-04T23:55:57.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博文框架">
-<meta name="twitter:description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考">
+<meta name="twitter:description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考。会加入一些常见的写作格式方便查阅，如果需要更多的功能实现建议参阅：Markdown格式的基础语法Hexo-Next主题自带的样式LaTex 常用的公式语法">
 <meta name="twitter:image" content="http://yoursite.com/images/avatar.png">
 
 
@@ -544,7 +542,9 @@ function category_js () {
       
 
       
-        <p>作为第一篇文章，此文用作本博客markdown (.md)格式写作参考</p>
+        <div class="note info">
+            <p>作为第一篇文章，此文用作本博客markdown (.md)格式写作参考。<br>会加入一些常见的写作格式方便查阅，如果需要更多的功能实现建议参阅：<br><a href="/2019/07/03/markdown格式的基础语法/">Markdown格式的基础语法</a><br><a href="/2019/07/03/Hexo-Next主题自带的样式/">Hexo-Next主题自带的样式</a><br><a href="/2019/07/04/Latex-math-syntax/">LaTex 常用的公式语法</a></p>
+          </div>
 <a id="more"></a>
 <!-- 关于抬头格式 -->
 <!-- comments: false (如果不需要评论则加上) -->
@@ -553,7 +553,7 @@ function category_js () {
 <!-- 以下为正文 -->
 <h2 id="Head-部分"><a href="#Head-部分" class="headerlink" title="Head 部分"></a>Head 部分</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博文框架</span><br><span class="line">date: 2019-06-20 00:00:00</span><br><span class="line">categories: </span><br><span class="line"><span class="bullet">  - </span>学习</span><br><span class="line"><span class="bullet">  - </span>hexo</span><br><span class="line"><span class="bullet">  - </span>模板</span><br><span class="line">tags: [blog,模板]</span><br><span class="line">reward: false</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">作为第一篇文章，此文用作本博客markdown (.md)格式写作参考</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">&lt;!-- 关于抬头格式 --&gt;</span><br><span class="line">&lt;!-- comments: false (如果不需要评论则加上) --&gt;</span><br><span class="line">&lt;!-- reward: false (如果需要捐助则删掉) --&gt;</span><br><span class="line">&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;</span><br><span class="line">&lt;!-- 以下为正文 --&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="如何新建一篇-post"><a href="#如何新建一篇-post" class="headerlink" title="如何新建一篇 post"></a>如何新建一篇 post</h2><p>命令：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\...\blog&gt; hexo n post &lt;新的博客名称&gt;</span><br></pre></td></tr></table></figure></p>
-<p>新的博客自动采用上文中的模板，代码如下（在终端没有hexo工具包的情况下可以先复制这里的模板使用，等之后有机会再推送）：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories: </span><br><span class="line"><span class="bullet">  - </span>一级分类</span><br><span class="line"><span class="bullet">  - </span>二级分类 （非必须）</span><br><span class="line"><span class="bullet">  - </span>三级分类 （非必须）</span><br><span class="line">tags: [blog,模板]</span><br><span class="line">reward: false</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这里是摘要</span><br><span class="line">Abstract</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">&lt;!-- 关于抬头格式 --&gt;</span><br><span class="line">&lt;!-- comments: false (如果不需要评论则加上) --&gt;</span><br><span class="line">&lt;!-- reward: false (如果需要捐助则删掉) --&gt;</span><br><span class="line">&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;</span><br><span class="line">&lt;!-- 以下为正文 --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span><br><span class="line"><span class="section">## 参考文献</span></span><br><span class="line"></span><br><span class="line">-----------------</span><br><span class="line">|本文作者： 坼甲|</span><br><span class="line">| ------------- |</span><br><span class="line">|版权声明： 本博客所有文章除特别声明外，均采用 [<span class="string">CC BY-NC-SA 4.0</span>](<span class="link">https://creativecommons.org/licenses/by-nc-sa/4.0/</span>) 许可协议。转载请注明出处！|</span><br></pre></td></tr></table></figure></p>
+<p>新的博客自动采用上文中的模板，代码如下（在终端没有hexo工具包的情况下可以先复制这里的模板使用，等之后有机会再推送）：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories: </span><br><span class="line"><span class="bullet">  - </span>一级分类</span><br><span class="line"><span class="bullet">  - </span>二级分类 （非必须）</span><br><span class="line"><span class="bullet">  - </span>三级分类 （非必须）</span><br><span class="line">tags: </span><br><span class="line"><span class="bullet">  - </span>blog</span><br><span class="line"><span class="bullet">  - </span>模板</span><br><span class="line">reward: false</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这里是摘要</span><br><span class="line">Abstract</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">&lt;!-- 关于抬头格式 --&gt;</span><br><span class="line">&lt;!-- comments: false (如果不需要评论则加上) --&gt;</span><br><span class="line">&lt;!-- reward: false (如果需要捐助则删掉) --&gt;</span><br><span class="line">&lt;!-- mathjax: true (实际上用的是Latex格式) --&gt;</span><br><span class="line">&lt;!-- 以下为正文 --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span><br><span class="line"><span class="section">## 参考文献</span></span><br><span class="line"></span><br><span class="line">-----------------</span><br><span class="line">&#123;% note danger no-icon %&#125;</span><br><span class="line"><span class="strong">**本文作者：**</span> 坼甲</span><br><span class="line"><span class="strong">**版权声明：**</span> 本博客所有文章除特别声明外，均采用 [<span class="string">CC BY-NC-SA 4.0</span>](<span class="link">https://creativecommons.org/licenses/by-nc-sa/4.0/</span>) 许可协议。转载请注明出处！</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>默认情况下：</p>
 <ol>
 <li>开启评论</li>
@@ -561,33 +561,11 @@ function category_js () {
 <li>使用基于Latex公式输入法</li>
 </ol>
 <h2 id="正文部分"><a href="#正文部分" class="headerlink" title="正文部分"></a>正文部分</h2><p>正文部分的markdown的详细写作说明请参考后续文章。</p>
-<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><h3 id="采用两种方式："><a href="#采用两种方式：" class="headerlink" title="采用两种方式："></a>采用两种方式：</h3><p></p> <p style="
-height: 210px;
-">
-<img src="/images/avatar.png" width="200" height="200" alt="伊芙利特" align="left">
-</p>  <p></p>
-
+<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/avatar.png " class="full-image" alt title="by NoriZC" style="max-width: none; width: 30%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <blockquote>
 <p>伊芙利特，源作者<a href="https://twitter.com/norizci?lang=en" target="_blank" rel="noopener">NoriZC</a></p>
 </blockquote>
-<p>代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;/p&gt; &lt;p style="</span><br><span class="line">height: 210px;</span><br><span class="line">"&gt;</span><br><span class="line">&lt;img src = "/images/avatar.png" </span><br><span class="line">     width = "200" height = "200" </span><br><span class="line">	 alt = "伊芙利特" align = left&gt;</span><br><span class="line">&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 伊芙利特，源作者[NoriZC](https://twitter.com/norizci?lang=en)</span></span><br></pre></td></tr></table></figure></p>
-<p></p> <p style="
-height: ;
-">
-<img src="/images/avatar.png" width="25%" height="25%" alt="伊芙利特" align="middle">
-</p>  <p></p>
-
-<blockquote>
-<center>伊芙利特，源作者<a href="https://twitter.com/norizci?lang=en" target="_blank" rel="noopener">NoriZC</a>
-  </center>
-
-</blockquote>
-<p>代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;/p&gt; &lt;p style="</span><br><span class="line">height: ;</span><br><span class="line">"&gt;</span><br><span class="line">&lt;img src = "/images/avatar.png" </span><br><span class="line">     width = 25% height = 25% </span><br><span class="line">	 alt = "伊芙利特"  align = middle&gt;</span><br><span class="line">&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; &lt;center&gt;伊芙利特，源作者&lt;a </span></span><br><span class="line"><span class="code">           href="https://twitter.com/norizci?lang=en" </span></span><br><span class="line"><span class="code">		   target="_blank" rel="noopener"&gt;NoriZC&lt;/a&gt;</span></span><br><span class="line">  &lt;/center&gt;</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/avatar.png" alt></p>
-<blockquote>
-<p>伊芙利特，源作者<a href="https://twitter.com/norizci?lang=en" target="_blank" rel="noopener">NoriZC</a></p>
-</blockquote>
-<p>代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![](/images/avatar.png)</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 伊芙利特，源作者[NoriZC](https://twitter.com/norizci?lang=en)</span></span><br></pre></td></tr></table></figure></p>
+<p>代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% fi /images/avatar.png , , by NoriZC, 30% %&#125;</span><br><span class="line"><span class="quote">&gt; 伊芙利特，源作者[NoriZC](https://twitter.com/norizci?lang=en)</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="公式举例"><a href="#公式举例" class="headerlink" title="公式举例"></a>公式举例</h2><p>本博客采用的公式代码基于Latex，举例如下：</p>
 <script type="math/tex; mode=display">
 P = \frac
@@ -596,24 +574,12 @@ P = \frac
 \sum_{i=1}^n (x_i-x)^2
 \sum_{i=1}^n (y_i-y)^2
 \right]^{1/2} }</script><p>其代码为：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">P = \frac</span><br><span class="line">&#123;\sum<span class="emphasis">_&#123;i=1&#125;^n (x_</span>i- x)(y_i- y)&#125;</span><br><span class="line">&#123;\displaystyle \left[</span><br><span class="line">\sum<span class="emphasis">_&#123;i=1&#125;^n (x_</span>i-x)^2</span><br><span class="line">\sum<span class="emphasis">_&#123;i=1&#125;^n (y_</span>i-y)^2</span><br><span class="line">\right]^&#123;1/2&#125; &#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></p>
-<h2 id="结尾部分"><a href="#结尾部分" class="headerlink" title="结尾部分"></a>结尾部分</h2><p>默认代码如下，需要根据情况添加内容：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span><br><span class="line"><span class="section">## 参考文献</span></span><br><span class="line">[<span class="string">Markdown: Syntax</span>](<span class="link">https://daringfireball.net/projects/markdown/syntax</span>)</span><br><span class="line"></span><br><span class="line">-----------------</span><br><span class="line">|本文作者： 坼甲|</span><br><span class="line">| ------------- |</span><br><span class="line">|版权声明： 本博客所有文章除特别声明外，均采用 [<span class="string">CC BY-NC-SA 4.0</span>](<span class="link">https://creativecommons.org/licenses/by-nc-sa/4.0/</span>) 许可协议。转载请注明出处！|</span><br></pre></td></tr></table></figure></p>
+<h2 id="结尾部分"><a href="#结尾部分" class="headerlink" title="结尾部分"></a>结尾部分</h2><p>默认代码如下，需要根据情况添加内容：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 结尾参考文献及中文版权声明 --&gt;</span><br><span class="line"><span class="section">## 参考文献</span></span><br><span class="line">[<span class="string">Markdown: Syntax</span>](<span class="link">https://daringfireball.net/projects/markdown/syntax</span>)</span><br><span class="line"></span><br><span class="line">-----------------</span><br><span class="line">&#123;% note danger no-icon %&#125;</span><br><span class="line"><span class="strong">**本文作者：**</span> 坼甲</span><br><span class="line"><span class="strong">**版权声明：**</span> 本博客所有文章除特别声明外，均采用 [<span class="string">CC BY-NC-SA 4.0</span>](<span class="link">https://creativecommons.org/licenses/by-nc-sa/4.0/</span>) 许可协议。转载请注明出处！</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">Markdown: Syntax</a></p>
 <hr>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>本文作者： 坼甲</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>版权声明： 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</td>
-</tr>
-</tbody>
-</table>
-</div>
-
+<div class="note danger no-icon">
+            <p><strong>本文作者：</strong> 坼甲<br><strong>版权声明：</strong> 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>
+          </div>
       
     </div>
 
@@ -791,7 +757,7 @@ P = \frac
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -826,7 +792,11 @@ P = \frac
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -987,7 +957,7 @@ P = \frac
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-部分"><span class="nav-number">1.</span> <span class="nav-text">Head 部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何新建一篇-post"><span class="nav-number">2.</span> <span class="nav-text">如何新建一篇 post</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文部分"><span class="nav-number">3.</span> <span class="nav-text">正文部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片测试"><span class="nav-number">4.</span> <span class="nav-text">图片测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#采用两种方式："><span class="nav-number">4.1.</span> <span class="nav-text">采用两种方式：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式举例"><span class="nav-number">5.</span> <span class="nav-text">公式举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾部分"><span class="nav-number">6.</span> <span class="nav-text">结尾部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">7.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-部分"><span class="nav-number">1.</span> <span class="nav-text">Head 部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何新建一篇-post"><span class="nav-number">2.</span> <span class="nav-text">如何新建一篇 post</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文部分"><span class="nav-number">3.</span> <span class="nav-text">正文部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片测试"><span class="nav-number">4.</span> <span class="nav-text">图片测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式举例"><span class="nav-number">5.</span> <span class="nav-text">公式举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾部分"><span class="nav-number">6.</span> <span class="nav-text">结尾部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">7.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
