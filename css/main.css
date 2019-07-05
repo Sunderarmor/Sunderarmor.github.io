@@ -2083,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4affff;
+  background: #2557ff;
 }
 .feed-link,
 .chat {
@@ -3379,6 +3379,6 @@ table > tbody > tr:nth-of-type(odd) {
   background-color: rgba(241,241,233,0.6);
 }
 code {
-  color: #ff6f42;
-  background: rgba(207,252,255,0.51);
+  color: #fc6423;
+  background: rgba(204,219,251,0.51);
 }
