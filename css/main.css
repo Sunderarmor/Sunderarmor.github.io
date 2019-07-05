@@ -2083,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c82b53;
+  background: #a779a8;
 }
 .feed-link,
 .chat {
@@ -3361,13 +3361,13 @@ ul.links-of-blogroll-list {
   margin-bottom: 20px;
   background-color: rgba(255,255,255,0.5);
 }
-.post-body p a.btn {
-  border: 1px solid #067e9d;
-}
 .post-body p a.btn:hover {
   border-color: #067e9d;
   color: #fff;
   background: #067e9d;
+}
+.post-body p a.btn {
+  border: 1px solid #067e9d;
 }
 table > thead > tr {
   background-color: rgba(255,236,236,0.6);
