@@ -1088,6 +1088,12 @@ pre .javascript .function {
     border-radius: 3px;
   }
 }
+.pdfobject-container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 510px;
+}
 .btn {
   display: inline-block;
   padding: 0 20px;
@@ -2077,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b94f85;
+  background: #c82b53;
 }
 .feed-link,
 .chat {
@@ -3347,4 +3353,28 @@ ul.links-of-blogroll-list {
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
+}
+.post-body .tabs {
+  position: relative;
+  display: block;
+  padding-top: 1px;
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.5);
+}
+.post-body p a.btn {
+  border: 1px solid #067e9d;
+}
+.post-body p a.btn:hover {
+  border-color: #067e9d;
+  color: #fff;
+  background: #067e9d;
+}
+table > thead > tr {
+  background-color: rgba(255,236,236,0.6);
+}
+table > tbody > tr:nth-of-type(even) {
+  background-color: rgba(246,246,246,0.6);
+}
+table > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(241,241,233,0.6);
 }

@@ -128,7 +128,7 @@ function category_js () {
 <meta property="og:site_name" content="圜则凹晶馆">
 <meta property="og:description" content="这里是摘要Abstract">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-04T16:48:57.374Z">
+<meta property="og:updated_time" content="2019-07-05T01:14:53.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown格式的基础语法">
 <meta name="twitter:description" content="这里是摘要Abstract">
@@ -485,14 +485,14 @@ function category_js () {
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/简单写作程序语言/" itemprop="url" rel="index"><span itemprop="name">简单写作程序语言</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/" itemprop="url" rel="index"><span itemprop="name">写作程序语言</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/简单写作程序语言/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a></span>
 
                 
                 
@@ -764,9 +764,7 @@ function category_js () {
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1521,6 +1519,32 @@ function category_js () {
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '510px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

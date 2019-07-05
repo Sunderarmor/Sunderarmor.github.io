@@ -121,7 +121,7 @@ function category_js () {
 
 
   <meta name="description" content="作为第一篇文章，此文用作本博客markdown (.md)格式写作参考。会加入一些常见的写作格式方便查阅，如果需要更多的功能实现建议参阅：Markdown格式的基础语法Hexo-Next主题自带的样式LaTex 常用的公式语法">
-<meta name="keywords" content="hexo,blog,模板">
+<meta name="keywords" content="blog,hexo,模板">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博文框架">
 <meta property="og:url" content="http://yoursite.com/2019/06/21/博文框架/index.html">
@@ -629,9 +629,9 @@ P = \frac
         
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
             <a href="/tags/模板/" rel="tag"><i class="fa fa-tag"></i> 模板</a>
           
@@ -794,9 +794,7 @@ P = \frac
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1551,6 +1549,32 @@ P = \frac
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '510px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

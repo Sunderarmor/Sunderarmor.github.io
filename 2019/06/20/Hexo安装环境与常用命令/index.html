@@ -121,7 +121,7 @@ function category_js () {
 
 
   <meta name="description" content="本博客当前部署在 我的个人主页 上。感谢b站 程序羊 提供的详细指导：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo本博客的基础搭建就是基于此视频的步骤完成的。但是在此之前仍然有一些准工作要做。">
-<meta name="keywords" content="hexo,blog,git,github">
+<meta name="keywords" content="blog,hexo,git,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo安装环境与常用命令">
 <meta property="og:url" content="http://yoursite.com/2019/06/20/Hexo安装环境与常用命令/index.html">
@@ -619,9 +619,9 @@ function category_js () {
         
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
             <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
           
@@ -782,9 +782,7 @@ function category_js () {
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1539,6 +1537,32 @@ function category_js () {
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '510px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

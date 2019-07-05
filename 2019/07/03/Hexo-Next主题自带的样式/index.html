@@ -130,7 +130,7 @@ function category_js () {
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/background_2.jpg">
 <meta property="og:image" content="http://yoursite.com/images/background_2.jpg">
-<meta property="og:updated_time" content="2019-07-04T23:05:42.240Z">
+<meta property="og:updated_time" content="2019-07-05T05:51:38.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Next主题自带的样式">
 <meta name="twitter:description" content="部分转载自：Hexo写作系列(1) - NexT主题自带的样式同时建议结合自身版本参考 最新的官方主题说明 。 本系列主要介绍和hexo-NexT主题相关的一些写作技巧，可能会涉及到部分前端知识(不了解也没关系，能用就行)。我之所以选择hexo-NexT来搭建个人网站，一个很重要的原因就是因为简单、方便、快捷！不需要服务器，直接通过Markdown来进行写作，不仅文章布局美观，还可以节省大量的时间">
@@ -593,15 +593,80 @@ function category_js () {
 <p>Note标签一共有以上六种类型：<code>default,primary,success,info,warning,danger</code>，源码如下：</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <div class="note danger">
-            <p><font color="red"><strong>注意：</strong></font></p><ol><li>这个版本的Note标签<font color="red"><strong>有可能</strong></font>会在命令与内容写在同一行时出现bug，导致正文中的部分代码和格式无法识别。</li><li>可以对标签内部再添加标题，如<code>### 注意</code>格式，但是这会导致之后的目录识别出现问题。</li></ol>
+            <p><font color="red"><strong>注意：</strong></font></p><ol><li>这个版本的Note标签<font color="red"><strong>有可能</strong></font>会在<strong>命令与内容写在同一行时</strong>出现bug，导致正文中的部分代码和格式无法识别。</li><li>可以对标签内部再添加标题，如<code>### 注意</code>格式，但是这会导致之后的目录识别出现问题，所以尽量避免使用这种效果吧。</li></ol>
           </div>
-<p>可以注意到，上文中的Note格式内部也可以拥有对应的标题、表格、列表等，但标题位避免bug建议用这里的方法实现。源码如下：</p>
+<p>可以注意到，上文中的Note格式内部也可以拥有对应的标题、表格、列表等，但标题为避免bug建议用这里的方法实现。源码如下：</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger %&#125;</span><br><span class="line">&lt;font color = red&gt;<span class="strong">**注意：**</span>&lt;/font&gt;</span><br><span class="line"><span class="bullet">1. </span>这个版本的Note标签&lt;font color = red&gt;<span class="strong">**有可能**</span>&lt;/font&gt;会在命令与内容写在同一行时出现bug，导致正文中的部分代码和格式无法识别。</span><br><span class="line"><span class="bullet">2. </span>可以对标签内部再添加标题，如<span class="code">`### 注意`</span>格式，但是这会导致之后的目录识别出现问题，所以尽量避免使用这种效果吧。</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Tab标签（重要）"><a href="#Tab标签（重要）" class="headerlink" title="Tab标签（重要）"></a>Tab标签（重要）</h2><p>这个标签和浏览器的tab是类似的，使用前也需要启用配置：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Tabs tag.</span></span><br><span class="line"><span class="attr">tabs:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  transition:</span></span><br><span class="line"><span class="attr">    tabs:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    labels:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  border_radius:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="按键"><a href="#按键" class="headerlink" title="按键"></a>按键</h2><p>标准语法格式：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button url, text, icon [class], [title] %&#125;</span><br><span class="line">&lt;!-- 别名 --&gt;</span><br><span class="line">&#123;% btn url, text, icon [class], [title] %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性名称</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">点击按钮后所前往的绝对或相对地址</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">按键上的文字，如果按键上没有图标则是必要的</td>
+</tr>
+<tr>
+<td style="text-align:left">icon</td>
+<td style="text-align:left">在FontAwesome网站里对应的图标名称（在开头不要加<code>fa-</code>）如果按键上没有文字则是必要的</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">可选项，控制按钮图标的大小: fa-fw , fa-lg , fa-2x , fa-3x , fa-4x , fa-5x</td>
+</tr>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">可选项，鼠标移动到按键上时显示的文字</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>按键放置位置随意，可以在文字中间也可以连成一片。<br>举例如下：<br><a class="btn" href="/images/background_2.jpg">背景图2</a></p>
+<a class="btn" href="#" title="返回开头"><i class="fa fa-home fa-fw"></i>返回开头</a><a class="btn" href="#" title="返回开头"><i class="fa fa-fa-fw"></i>返回开头</a>
+<p>这是句子内的按键：<a class="btn" href="## Note标签（重要）" title="Note标签"><i class="fa fa-home fa-lg"></i>Note标签</a> 。</p>
+<div class="text-center"><a class="btn" href="#" title="返回开头"><i class="fa fa-home fa-3x fa-4x"></i>返回开头</a> <a class="btn" href="#" title="返回开头"><i class="fa fa-home fa-3x fa-lg"></i>返回开头</a> <a class="btn" href="#" title="返回开头"><i class="fa fa-home fa-3x"></i></a></div>
+
+<p>源码如下:<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% btn /images/background_2.jpg, 背景图2 %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn #, 返回开头,home fa-fw, 返回开头 %&#125;&#123;% btn #, 返回开头,fa-fw, 返回开头 %&#125;</span><br><span class="line"></span><br><span class="line">这是句子内的按键：&#123;% btn ## Note标签（重要）, Note标签,home fa-lg, Note标签 %&#125; 。</span><br><span class="line"></span><br><span class="line">&lt;div class="text-center"&gt;&#123;% btn #, 返回开头,home fa-3x fa-4x, 返回开头 %&#125; &#123;% btn #, 返回开头,home fa-3x, 返回开头 %&#125; &#123;% btn #, ,home fa-3x, 返回开头 %&#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p><font color="red"><strong>注意：</strong></font><br>这里出现了两种不同对象属性的按键，一种对应的是<code>.post-body p a.btn</code>，在和文章的文字联系在一起时生效，颜色为<font color="#067e9d"><strong>蓝色</strong></font>。另一种则是<code>.btn</code>，在上下皆为空行时生效，颜色为<font color="#fc6423"><strong>橘红色</strong></font>。</p>
+<h2 id="Label标签"><a href="#Label标签" class="headerlink" title="Label标签"></a>Label标签</h2><p>语法如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% label [class]@Text %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性名称</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:left">label中的文字，其中*@*符号前可以加空格也可以和class连着</td>
+</tr>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">有default， primary，success，info，warning，danger 类型</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>例如：<br>默认的标签：<span class="label default">默认</span>，<span class="label primary">优先的标签，表示优先</span>。<br>成功的标签<span class="label success">表示成功？</span>信息提示标签：<span class="label info">提醒。</span><br>警告标签：<em><span class="label warning">警告的内容</span></em> 危险提醒： <strong><span class="label danger">这里有危险。</span></strong><br>删除线以及默认标签：<del><span class="label default">默认</span></del> <mark>标记</mark>。</p>
+<p>源代码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">默认的标签：&#123;% label @默认 %&#125;，&#123;% label primary@优先的标签，表示优先 %&#125;。</span><br><span class="line">成功的标签&#123;% label success@表示成功？%&#125;信息提示标签：&#123;% label info@提醒。 %&#125;</span><br><span class="line">警告标签：<span class="emphasis">*&#123;% label warning @警告的内容 %&#125;*</span> 危险提醒： <span class="strong">**&#123;% label danger@这里有危险。 %&#125;**</span></span><br><span class="line">删除线以及默认标签：~~&#123;% label default @默认 %&#125;~~ &lt;mark&gt;一般的标记文字&lt;/mark&gt;。</span><br></pre></td></tr></table></figure></p>
+<h2 id="Tab标签（重要）"><a href="#Tab标签（重要）" class="headerlink" title="Tab标签（重要）"></a>Tab标签（重要）</h2><p>这个标签和浏览器的tab是类似的，使用前需要启用主题配置文件：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Tabs tag.</span></span><br><span class="line"><span class="attr">tabs:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  transition:</span></span><br><span class="line"><span class="attr">    tabs:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    labels:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  border_radius:</span> <span class="number">3</span></span><br></pre></td></tr></table></figure></p>
 <p>效果如下：</p>
-<div class="tabs" id="贴吧"><ul class="nav-tabs"><li class="tab active"><a href="#贴吧-1">android开发吧</a></li><li class="tab"><a href="#贴吧-2">java吧</a></li><li class="tab"><a href="#贴吧-3">c++吧</a></li><li class="tab"><a href="#贴吧-4">c语言</a></li><li class="tab"><a href="#贴吧-5">神奇海螺</a></li></ul><div class="tab-content"><div class="tab-pane active" id="贴吧-1"><p>有问题为什么不先问问隔壁Java吧呢？</p></div><div class="tab-pane" id="贴吧-2"><p>有问题为什么不先问问隔壁C++吧呢？</p></div><div class="tab-pane" id="贴吧-3"><p>有问题为什么不先问问隔壁C语言吧呢？</p></div><div class="tab-pane" id="贴吧-4"><p>有问题为什么不先问问神奇海螺吧呢？</p></div><div class="tab-pane" id="贴吧-5"><p>有问必答不知道</p></div></div></div>
+<div class="tabs" id="贴吧"><ul class="nav-tabs"><li class="tab active"><a href="#贴吧-1"><i class="fa fa-home"></i>android开发吧</a></li><li class="tab"><a href="#贴吧-2">java吧</a></li><li class="tab"><a href="#贴吧-3">c++吧</a></li><li class="tab"><a href="#贴吧-4">c语言</a></li><li class="tab"><a href="#贴吧-5">神奇海螺</a></li></ul><div class="tab-content"><div class="tab-pane active" id="贴吧-1"><p>有问题为什么不先问问隔壁Java吧呢？</p></div><div class="tab-pane" id="贴吧-2"><p>有问题为什么不先问问隔壁C++吧呢？</p></div><div class="tab-pane" id="贴吧-3"><p>有问题为什么不先问问隔壁C语言吧呢？</p></div><div class="tab-pane" id="贴吧-4"><p>有问题为什么不先问问神奇海螺吧呢？</p></div><div class="tab-pane" id="贴吧-5"><p>有问必答不知道</p></div></div></div>
 <p>源码如下：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 贴吧, 1 %&#125;</span><br><span class="line">&lt;!-- tab android开发吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁Java吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab java吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C++吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c++吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C语言吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c语言 --&gt;</span><br><span class="line">有问题为什么不先问问神奇海螺吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 神奇海螺 --&gt;</span><br><span class="line">有问必答不知道</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 贴吧, 1 %&#125;</span><br><span class="line">&lt;!-- tab android开发吧@home --&gt;</span><br><span class="line">有问题为什么不先问问隔壁Java吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab java吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C++吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c++吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C语言吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c语言 --&gt;</span><br><span class="line">有问题为什么不先问问神奇海螺吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 神奇海螺 --&gt;</span><br><span class="line">有问必答不知道</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
 <p>简单介绍下常规用法：</p>
 <ol>
 <li>源码第一行的数字表示默认显示哪一个tab页面，如果是-1则表示隐藏所有tab页面内容。</li>
@@ -609,6 +674,29 @@ function category_js () {
 <li>tab的名字支持fontawesome图标，使用方法是@加上图标的名字，例如<code>@home</code>，注意该图标需要添加在tab名字的最后，渲染时图标会自动放在名字最前面，比如：<code>&lt;!-- tab android开发吧@home --&gt;</code>。</li>
 </ol>
 <p>更多内容参见：<br><a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener">最新的官方主题说明</a><br><a href="https://almostover.ru/2016-01/hexo-theme-next-test/#Tab-tag-test" target="_blank" rel="noopener">Tab tag test</a></p>
+<h2 id="PDF窗口"><a href="#PDF窗口" class="headerlink" title="PDF窗口"></a>PDF窗口</h2><p>使用前需要启用主题配置文件：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pdf:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Default height</span></span><br><span class="line"><span class="attr">  height:</span> <span class="number">510</span><span class="string">px</span></span><br><span class="line"><span class="attr">  pdfobject:</span></span><br><span class="line">    <span class="comment"># Use 2.1.1 as default, jsdelivr as default CDN, works everywhere even in China</span></span><br><span class="line"><span class="attr">    cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js</span></span><br><span class="line">    <span class="comment"># CDNJS, provided by cloudflare, maybe the best CDN, but not works in China</span></span><br><span class="line">    <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js</span></span><br></pre></td></tr></table></figure></p>
+<p>基本语法：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf url [height] %&#125;</span><br><span class="line"></span><br><span class="line">[url]    : PDF文件的地址</span><br><span class="line">[height] : 可选. PDF文件的高度, 最好是500px.</span><br></pre></td></tr></table></figure></p>
+<p>举例：<br><div class="pdf" target="https://arxiv.org/pdf/1606.07792.pdf" height="500px"></div></p>
+<p>源码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf https://arxiv.org/pdf/1606.07792.pdf 500px %&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="图片合集"><a href="#图片合集" class="headerlink" title="图片合集"></a>图片合集</h2><p>基本语法：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture [group]-[layout] %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 别名 --&gt;</span><br><span class="line">&#123;% gp [group]-[layout] %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endgp %&#125;</span><br><span class="line"></span><br><span class="line">[group]  : Total number of pictures to add in the group.</span><br><span class="line">[layout] : Default picture under the group to show.</span><br></pre></td></tr></table></figure></p>
+<p>源码举例如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp 5-2 %&#125;</span><br><span class="line">  ![](/images/background_2.jpg)</span><br><span class="line">  ![](/images/background_2.jpg)</span><br><span class="line">  ![](/images/background_2.jpg)</span><br><span class="line">  ![](/images/background_2.jpg)</span><br><span class="line">  ![](/images/background_2.jpg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>只是简单的图片铺陈，这里就不演示效果了，看起来是一个鸡肋功能，待我以后对这个功能理解更深之后再回来更新。</p>
+<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><p>基本语法很简单，难的是获取视频的地址：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% video url %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中url为视频地址。</p>
+<p>一般来讲，对于外部网站，建议采用其提供的分享连接然后直接嵌入的方法，如：</p>
+<iframe width="90%" height="500px" src="//player.bilibili.com/player.html?aid=52511233&cid=91895316&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>源码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe width="90%" height="500px" src="//player.bilibili.com/player.html?aid=52511233&amp;cid=91895316&amp;page=1" </span><br><span class="line">scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><div class="note danger no-icon">
+            <p>本功能未安装，以后有需要的时候再实现。因此暂时也无法演示效果。</p>
+          </div>
+<p>Mermaid是一个用来帮助markdown文本绘制流程图的js库。<br>可以通过设计一些语法规则，实现将符合该语法的语句转化成相应的说明图，例如流程图、通讯图和甘特图。</p>
+<p>使用前需要启用主题配置文件：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line"><span class="attr">  theme:</span> <span class="string">forest</span></span><br><span class="line">  <span class="comment"># Use 8.0.0 as default, jsdelivr as default CDN, works everywhere even in China</span></span><br><span class="line"><span class="attr">  cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/mermaid@8.0.0/dist/mermaid.min.js</span></span><br><span class="line">  <span class="comment"># CDNJS, provided by cloudflare, maybe the best CDN, but not works in China</span></span><br><span class="line">  <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js</span></span><br></pre></td></tr></table></figure></p>
+<p>同时根据cdn来安装对应的js库。</p>
+<p>基础语法例如：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mermaid type %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中type代表不同形式的流程图，可以去 <a href="https://github.com/knsv/mermaid" target="_blank" rel="noopener">https://github.com/knsv/mermaid</a> 寻找自己想要用到的方案。</p>
+<p>简单的例子源码如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;% mermaid type %&#125;</span><br><span class="line">&#123;% mermaid graph TD %&#125;</span><br><span class="line">A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">B --&gt; C&#123;Let me thinksssss&lt;br/&gt;ssssssssssssssssssssss&lt;br/&gt;sssssssssssssssssssssssssss&#125;</span><br><span class="line">C --&gt;|One| D[Laptop]</span><br><span class="line">C --&gt;|Two| E[iPhone]</span><br><span class="line">C --&gt;|Three| F[Car]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>更多内容参见：<br><a href="https://theme-next.org/docs/tag-plugins/mermaid" target="_blank" rel="noopener">最新的官方主题说明</a><br><a href="https://github.com/knsv/mermaid" target="_blank" rel="noopener">https://github.com/knsv/mermaid</a></p>
 <!-- 结尾参考文献及中文版权声明 -->
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://lewky.cn/posts/38eb04fa.html" target="_blank" rel="noopener">Hexo写作系列(1) - NexT主题自带的样式</a><br><a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener">NexT User Docs – NexT Supported Tags</a><br><a href="https://almostover.ru/2016-01/hexo-theme-next-test/#Tab-tag-test" target="_blank" rel="noopener">Tab tag test</a></p>
 <hr>
@@ -862,9 +950,7 @@ function category_js () {
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1025,7 +1111,7 @@ function category_js () {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本居中引用"><span class="nav-number">1.</span> <span class="nav-text">文本居中引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片属性"><span class="nav-number">2.</span> <span class="nav-text">图片属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note标签（重要）"><span class="nav-number">3.</span> <span class="nav-text">Note标签（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab标签（重要）"><span class="nav-number">4.</span> <span class="nav-text">Tab标签（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">5.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本居中引用"><span class="nav-number">1.</span> <span class="nav-text">文本居中引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片属性"><span class="nav-number">2.</span> <span class="nav-text">图片属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note标签（重要）"><span class="nav-number">3.</span> <span class="nav-text">Note标签（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#按键"><span class="nav-number">4.</span> <span class="nav-text">按键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Label标签"><span class="nav-number">5.</span> <span class="nav-text">Label标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tab标签（重要）"><span class="nav-number">6.</span> <span class="nav-text">Tab标签（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PDF窗口"><span class="nav-number">7.</span> <span class="nav-text">PDF窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片合集"><span class="nav-number">8.</span> <span class="nav-text">图片合集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频"><span class="nav-number">9.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程图"><span class="nav-number">10.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">11.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
@@ -1619,6 +1705,32 @@ function category_js () {
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '510px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

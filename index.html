@@ -486,14 +486,14 @@ function category_js () {
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/Latex/" itemprop="url" rel="index"><span itemprop="name">Latex</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/" itemprop="url" rel="index"><span itemprop="name">写作程序语言</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/Latex/syntax/" itemprop="url" rel="index"><span itemprop="name">syntax</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/Latex/" itemprop="url" rel="index"><span itemprop="name">Latex</span></a></span>
 
                 
                 
@@ -871,14 +871,14 @@ function category_js () {
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/简单写作程序语言/" itemprop="url" rel="index"><span itemprop="name">简单写作程序语言</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/" itemprop="url" rel="index"><span itemprop="name">写作程序语言</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/简单写作程序语言/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/写作程序语言/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a></span>
 
                 
                 
@@ -1117,7 +1117,10 @@ function category_js () {
 
       
         
-          <p>本文主要借由介绍本博客中用到的所有关于主题个性化的设置来同时达到介绍Hexo-Next主题的个性化设置的目的。<br>如果博客本身和建站日志都有更新，那么这里的内容会随时跟进在相同分类下的后续文章里。</p>
+          <ol>
+<li>本文主要借由介绍本博客中用到的所有关于主题个性化的设置来同时达到介绍Hexo-Next主题的个性化设置的目的。</li>
+<li>如果博客本身和建站日志都有更新，那么需要详细解释的重要内容会随时跟进在相同分类下的后续文章里。</li>
+</ol>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1492,7 +1495,7 @@ function category_js () {
 
       
         
-          <p>对于网站的关键改动和细节进行整理与记录。</p>
+          <p><strong>对于网站的关键改动和细节进行整理与记录。</strong></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1812,9 +1815,7 @@ function category_js () {
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2529,6 +2530,32 @@ function category_js () {
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '510px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
