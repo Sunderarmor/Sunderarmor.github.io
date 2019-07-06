@@ -2083,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2557ff;
+  background: #ffd5ff;
 }
 .feed-link,
 .chat {
@@ -3357,9 +3357,13 @@ ul.links-of-blogroll-list {
 .post-body .tabs {
   position: relative;
   display: block;
-  padding-top: 1px;
+  padding-top: 0px;
   margin-bottom: 20px;
   background-color: rgba(255,255,255,0.5);
+  border-radius: 1px;
+}
+.post-body .tabs .tab-content .tab-pane {
+  border-radius: 1px;
 }
 .post-body p a.btn {
   border: 1px solid #067e9d;
