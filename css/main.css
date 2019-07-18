@@ -2083,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #180408;
+  background: #ff8cff;
 }
 .feed-link,
 .chat {
@@ -3255,7 +3255,7 @@ ul.breadcrumb li+li:last-child {
   background: rgba(255,255,255,0);
 }
 .content-wrap {
-  background: rgba(255,255,250,0.85);
+  background: #fdfcfa;
 }
 .posts-expand {
   padding-top: 20px;
