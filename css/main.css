@@ -2083,7 +2083,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8cff;
+  background: #a7ffff;
 }
 .feed-link,
 .chat {
@@ -3246,16 +3246,16 @@ ul.breadcrumb li+li:last-child {
   background: rgba(255,255,255,0);
 }
 .sidebar-inner {
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.8);
 }
 .header-inner {
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.8);
 }
 .menu {
   background: rgba(255,255,255,0);
 }
 .content-wrap {
-  background: #fdfcfa;
+  background: #efedec;
 }
 .posts-expand {
   padding-top: 20px;
